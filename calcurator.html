@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Calculator {
+        margin-top: 10px;
+    }
+
+    #operator button {
+        width: 87px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <p>Calculator</p>
+    <form class="abc">
+        <input id="number" type="number" >
+        <input id="number2" type="number" >
+    </form>
+    <p id="result">0</p>
+    <div id="operator">
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="divi()">/</button>
+    </div>
+
+
+    <script>
+        function add() {
+            let a = +document.getElementById("number").value
+            let b = +document.getElementById("number2").value
+            let sum = a + b
+            document.getElementById("result").innerText = sum;
+        }
+        function sub() {
+            let a = +document.getElementById("number").value
+            let b = +document.getElementById("number2").value
+            let sub = a - b
+            document.getElementById("result").innerText = sub;
+        }
+        function mul() {
+            let a = +document.getElementById("number").value
+            let b = +document.getElementById("number2").value
+            let mul = a * b
+            document.getElementById("result").innerText = mul;
+        }
+        function divi() {
+            let a = +document.getElementById("number").value
+            let b = +document.getElementById("number2").value
+            let divi = a / b
+            document.getElementById("result").innerText = divi;
+        }
+    </script>
+</body>
+
+</html>
