@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nhap so</p>
+    <input id="number" type="text" value="">
+    <button id="test" onclick="check">click</button>
+    <script>
+        document.getElementById("test").addEventListener("click", function () {
+            let so = document.getElementById("number").value;
+            if (so % 2 == 0) {
+                alert(" day la so chan")
+            } else {
+                alert(" day la so le")
+            }
+        });
+
+    </script>
+</body>
+
+</html>
