@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let y = +prompt("nhap nam");
+        if (y % 4 == 0) {
+            if (y % 100 == 0) {
+                if (y % 400 == 0) {
+                    alert(y + " la nam nhuan");
+                } else {
+                    alert(y + " khong phai nam nhuan");
+                }
+            } else {
+                alert(y + " la nam nhuan");
+            }
+        } else {
+            alert(y + " khong phai nam nhuan");
+        }
+    </script>
+</body>
+
+</html>
